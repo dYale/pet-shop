@@ -18,3 +18,16 @@ h2{
 	border: 1px black solid;
 	margin: 2px 2px 2px 2px;
 }
+
+.sign-in{
+	text-align: center;
+	display: inline-block;
+	background-color: #dcdcdc;
+	border: 1px black solid;
+	margin-left: 500px;
+	margin-right: auto;
+}
+
+.sign-in button:hover{
+	background-color: teal;
+}

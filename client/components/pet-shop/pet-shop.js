@@ -6,7 +6,11 @@
     var ctrl = this
     ctrl.shop = m.request({ method: 'GET', url: 'http://pet-shop.api.mks.io/shops/1' })
     ctrl.pets = m.request({ method: 'GET', url: 'http://pet-shop.api.mks.io/shops/1/pets'})
-    ctrl.myclickhandler = function(){return 'clicked!'};
+    
+    ctrl.myclickhandler = function(){return console.log('clicked!')};
+
+
+
 
   }
 

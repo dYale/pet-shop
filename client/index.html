@@ -4,12 +4,15 @@
   <link rel='stylesheet' type='text/css' href='components/pet-shop/pet-shop.css'> 
   </head>
 <body>
-
   <div id="app"></div>
+	<div id="signin"></div>		
+
   <script src="bower_components/mithril/mithril.js"></script>
   <script src="components/pet-shop/pet-shop.js"></script>
+  <script src="components/pet-shop/sign-in.js"></script>
   <script>
     m.mount(document.getElementById('app'), PetShop)
+    m.mount(document.getElementById('signin'), SignIn)
   </script>
 
 
