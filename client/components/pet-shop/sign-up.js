@@ -13,11 +13,15 @@
   		ctrl.submit = function (e){
   			e.preventDefault();
   			m.request({method: 'POST', url: 'http://pet-shop.api.mks.io/signup', data:{ 'username':ctrl.username, 'password' : ctrl.password
-  			}}).then(function() {
-  			console.log('sdaf')
-  	})
+  			}})
+  			.then(function() {
+  				console.log('New User Added')},
+  				function(){
+  					console.log('Try Again!')
+  				})
+
+  	}
   }
-}
 
   SignUp.view = function (ctrl) {
   	return m('form', {class: 'signup', onsubmit: ctrl.submit}, [
