@@ -10,7 +10,6 @@ h2{
 	text-align: center;
 }
 
-
 .container{
 	text-align: center;
 	display: inline-block;
@@ -19,13 +18,27 @@ h2{
 	margin: 2px 2px 2px 2px;
 }
 
-form{
+.signup{
+	text-align: center;
+	background-color: #dcdcdc;
+	border: 1px black solid;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+
+.forms{
+
+}
+
+.signin{
 	text-align: center;
 	display: inline-block;
 	background-color: #dcdcdc;
 	border: 1px black solid;
-	margin-left: 500px;
+	margin-left: auto;
 	margin-right: auto;
+	float: right;
 }
 
 .sign-in button:hover{

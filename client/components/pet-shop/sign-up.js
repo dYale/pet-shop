@@ -1,9 +1,6 @@
 (function(){
 
-
   window.SignUp = {}
-
-
 
   SignUp.controller = function () {
   	var ctrl = this;
@@ -23,11 +20,11 @@
 }
 
   SignUp.view = function (ctrl) {
-  	return m('form', {onsubmit: ctrl.submit}, [
-  	  m('h1', 'Sign In'),
-  	  m("input[type=text]", {value:ctrl.username(), onchange: m.withAttr('value', ctrl.username)}),
-  	  m('input[type=text]', {value:ctrl.password(), onchange: m.withAttr('value', ctrl.password)}),
-  	  m('button[type=submit]','Sign In')
+  	return m('form', {class: 'signup', onsubmit: ctrl.submit}, [
+  	  m('h1', 'Sign Up'),
+  	  m("input[type=text]", {placeholder: 'Username',value:ctrl.username(), onchange: m.withAttr('value', ctrl.username)}),
+  	  m('input[type=text]', {placeholder: 'Password',value:ctrl.password(), onchange: m.withAttr('value', ctrl.password)}),
+  	  m('button[type=submit]','Sign Up')
   	])
   	//input for username
   	//input for password

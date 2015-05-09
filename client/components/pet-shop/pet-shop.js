@@ -6,12 +6,11 @@
     var ctrl = this
     ctrl.shop = m.request({ method: 'GET', url: 'http://pet-shop.api.mks.io/shops/1' })
     ctrl.pets = m.request({ method: 'GET', url: 'http://pet-shop.api.mks.io/shops/1/pets'})
-    
+    ctrl.singup = m.request({ method: 'POST', url: 'http://pet-shop.api.mks.io/signin', 
+      data:{'username':'MEOWFACE','password': 'BIGsMEOWBUTT'} })
+      .then(function(){console.log('/asdasd')}, function(){console.log('failed')})
+      ctrl.singup();
     ctrl.myclickhandler = function(){return console.log('clicked!')};
-
-
-
-
   }
 
   PetShop.view = function (ctrl) {
@@ -26,10 +25,6 @@
           m('br'),
           console.log(),
           m("button", {onclick: ctrl.myclickhandler}, animal.likes)])
-
-
-
-
         })
       
     ])
