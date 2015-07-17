@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel='stylesheet' type='text/css' href='components/pet-shop/pet-shop.css'> 
+  </head>
 <body>
-
   <div id="app"></div>
+  <div class='forms'>
+	  <span id="signup"></span>		
+    <span id="signin"></span> 
+  </div>
 
   <script src="bower_components/mithril/mithril.js"></script>
   <script src="components/pet-shop/pet-shop.js"></script>
+  <script src="components/pet-shop/sign-up.js"></script>
+  <script src="components/pet-shop/sign-in.js"></script>
+  <script src="ext/functions.js"></script>
   <script>
     m.mount(document.getElementById('app'), PetShop)
+    m.mount(document.getElementById('signup'), SignUp)
+    m.mount(document.getElementById('signin'), SignIn)
   </script>
 
 
